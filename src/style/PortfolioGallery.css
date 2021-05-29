@@ -1,0 +1,30 @@
+.PortfolioGallery{
+    position: relative;
+    /* height: 300px; */
+    width: 300px;
+    cursor: pointer;
+    object-fit: contain;
+
+}
+.PortfolioGallery > img{
+    position: relative;
+    height: 100%;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(49, 66, 97, 0.6);
+    opacity: 0;
+    transition: .3s ease-in;
+}
+.PortfolioGallery:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
